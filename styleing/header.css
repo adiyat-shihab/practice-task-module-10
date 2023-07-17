@@ -1,0 +1,152 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  padding: 83px 120px;
+}
+/* navigation style */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 35px;
+  list-style: none;
+}
+/* intro style */
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.intro-img {
+  width: 475px;
+  height: 475px;
+  flex-shrink: 0;
+  border-radius: 475px;
+  border: 3px solid var(--brand-purple-100, #f1e4ff);
+}
+.intro-background-img-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+}
+.intro-background-img {
+  width: 332.305px;
+  height: 332.305px;
+  border-radius: 332.305px;
+  background: var(--brand-purple-100, #f1e4ff);
+}
+.main-camera {
+  position: absolute;
+  right: 155px;
+  top: 211px;
+}
+.intro-head {
+  width: 582px;
+  height: 133px;
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+}
+.intro-para {
+  width: 505px;
+  height: 60.9px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.intro-btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: center;
+  border-radius: 41px;
+  background: #e02c6d;
+  gap: 8px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-list {
+    gap: 10px;
+  }
+  .nav-heading {
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: 700;
+    width: 200px;
+  }
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .intro-content {
+    width: 100vw;
+  }
+  .intro-head {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .intro-para {
+    width: 95%;
+    height: auto;
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .intro-btn {
+    width: 50%;
+    margin: auto;
+  }
+  .intro-img {
+    width: 257px;
+    height: 257px;
+  }
+  .intro-background-img-container {
+    height: 100%;
+    margin: auto;
+  }
+  .intro-background-img {
+    width: 179.794px;
+    height: 179.794px;
+  }
+  .main-camera {
+    width: 202px;
+    height: 190px;
+    position: static;
+  }
+  .intro-btn {
+    margin: auto;
+  }
+}
